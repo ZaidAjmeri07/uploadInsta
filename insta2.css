@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.wrapper{
+    position: relative;
+    
+}
+
+.instacontainer{
+    width: 100%;
+    height: 100vh;
+    /* background-color: violet; */
+    display: flex;
+    border-radius: 20px;
+}
+
+.left{
+    width: 20%;
+    height: 100%;
+    /* background-color: blue; */
+    position: fixed;
+    z-index: 2;
+    border-radius: 20px;
+    
+
+}
+
+.instagram_icon{
+    width: 100%;
+    padding-top: 50px;
+    
+}
+
+.instagram_icon img{
+    object-fit: cover;
+    
+}
+
+.Profile_photo_container{
+
+    /* background-color: aquamarine; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+
+.Profile_photo{
+    height: 50px;
+    width: 50px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Profile_photo img{
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.followercontainer{
+    height: 3vh;
+    width: 100%;
+
+    display: flex;
+    margin-bottom: 1px;
+}
+
+.followercontent{
+    height: 3vh;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+
+
+}
+
+.followercontent .fol{
+    font-weight: 500;
+    border: none;
+}
+
+.fol{
+    height: 100%;
+    width: calc(100%/3);
+
+    border-left: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+
+}
+
+.insta_bio{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.insta_bio h4{
+    padding: 3px;
+    text-align: left;
+}
+
+.insta_bio h5{
+    justify-content: center;
+    text-align: left;
+}
+
+.Highlight{
+    background-color: azure;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: auto;
+    scrollbar-width: none;
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Circle{
+    height: 50px;
+    width: 50px;
+    background-color: #e7177f;
+    border: 2px solid #e7177f;
+    border-radius: 50%;
+
+}
+
+.Circle img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.Setting_info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.Dart{
+    font-size: large;
+    text-align: start;
+}
+
+#Logout{
+    bottom: 0;
+    margin-top: 40px;
+}
+
+.right{
+    width: 80%;
+    height: 100%;
+    background-color: gainsboro;
+    position: fixed;
+    right: 0%;
+    border-radius: 20px;
+    
+}
+
+.topnav{
+
+    height: 10vh;
+    width: 80%;
+    position: fixed;
+    /* background-color: yellow; */
+    background-color: azure;
+    display: flex;
+    border-radius: 18x;
+}
+
+.nav{
+    /* background-color: red; */
+    height: 100%;
+    width: calc(100%/2);
+
+}
+
+.nav input{
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 30px;
+    background-color: #ffffff;
+    font-size: 18px;
+
+}
+
+
+
+.navleft{
+    /* background-color: blueviolet; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navright{
+    /* background-color: chartreuse; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content:right;
+    margin-right: 20px;
+}
+
+.navright button{
+    padding: 10px 20px;
+    background-color: #e7177f;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.bottomnav{
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    background-color: azure;
+    top: calc(100%/10);
+}
+
+.story_header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    background-color: gainsboro;
+    height: 20%;
+    text-align: left;
+    color: white;
+    text-shadow: 0px 0px azure;
+
+}
+
+.storycontainer{
+    /* background-color:chartreuse; */
+    height: 80%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 0 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    align-items: center;
+}
+
+
+.story{
+    width: 70px;
+    text-align: center;
+    font-family: sans-serif;
+    flex-shrink: 0;
+    /* background-color: aqua; */
+}
+
+.story_content{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 3px;
+}
+
+.story_content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #e7177f;
+    border-radius: 50%;
+}
+
+.story p{
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.postcontainer{
+    height: 80vh;
+    /* background-color: cyan; */
+    border-radius: 20px;
+    margin-top: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding-top: 330px;
+
+}
+
+.scorller{
+
+    height: 500px;
+    width: 99%;
+    margin: 10px;
+    /* background-color: #e7177f; */
+    border-radius: 15px;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     overflow: auto;
+     scrollbar-width: none;
+     flex-shrink: 0;
+     padding-left: 12px;
+}
+
+.card{
+    height: 95%;
+    width: calc(100%/3);
+    border-radius: 15px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.pfp{
+    height: 100%;
+    width: 100%;
+    background-color: #e7177f;
+}
+
+
+
+.postimagg{
+    height: 80%;
+    width: 100%;
+}
+.postimagg img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+
+.description p{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.description i{
+    
+
+}
